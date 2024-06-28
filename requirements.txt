@@ -1,0 +1,5 @@
+numpy
+matplotlib
+tensorflow
+
+# Add this to your terminal to install the requirements: "pip3 install -r requirements.txt"

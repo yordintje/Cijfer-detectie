@@ -16,6 +16,8 @@ model.add(tf.keras.layers.Dense(10, activation='softmax')) # Output layer with 1
 
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy']) # Compile the model
 
-model.fit(x_train, y_train, epochs=20) # Train the model
+model.fit(x_train, y_train, epochs=20) # Train the model | How hihgher the epochs, how better the model
 
 model.save('cijfermodel.keras') # Save the model
+
+# This file creates cijfermodel.keras which is a model that's used in main.py to predict the numbers
