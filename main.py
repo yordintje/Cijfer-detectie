@@ -1,16 +1,6 @@
-from torchvision import datasets
-from torchvision.transforms import ToTensor
+import os
+import cv2 # Load and process images
+import numpy as np # Numpy Array's
+import matplotlib.pyplot as plt # Visualize of digits
+import tensorflow as tf # Using for the Machine Learning part
 
-train_data = datasets.MNIST(
-    root = 'data',
-    train = True,
-    transform = ToTensor(),
-    download = True
-)
-
-test_data = datasets.MNIST(
-    root = 'data',
-    train = False,
-    transform = ToTensor(),
-    download = True
-)
