@@ -4,12 +4,12 @@ import numpy as np # Numpy Array's
 import matplotlib.pyplot as plt # Visualize of digits
 import tensorflow as tf # Using for the Machine Learning part
 
-mnist = tf.keras.datasets.mnist # Load the MNIST dataset
-(x_train, y_train), (x_test, y_test) = mnist.load_data() # Split the data into training and testing sets
+# mnist = tf.keras.datasets.mnist # Load the MNIST dataset
+# (x_train, y_train), (x_test, y_test) = mnist.load_data() # Split the data into training and testing sets
 
-# Normalize the data (0-1)
-x_train = tf.keras.utils.normalize(x_train, axis=1)
-x_test = tf.keras.utils.normalize(x_test, axis=1)
+# # Normalize the data (0-1)
+# x_train = tf.keras.utils.normalize(x_train, axis=1)
+# x_test = tf.keras.utils.normalize(x_test, axis=1)
 
 # # Create the model
 # model = tf.keras.models.Sequential()
@@ -26,8 +26,7 @@ x_test = tf.keras.utils.normalize(x_test, axis=1)
 
 model = tf.keras.models.load_model('geschreven.keras') # Load the model
 
-loss, accuracy = model.evaluate(x_test, y_test) # Evaluate the model
-
-print(loss, accuracy) # Print the loss and accuracy
+image_number = 1
+while os.path.isfile(f"getallen/0/0_{image_number}.jpg"):
 
 
